@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9cb8d6f7-9f1d-438b-bb84-863fcdb269eb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JupyterTrust" id="ff141945-3aa7-4e4a-a7da-213dc05ff6ff" />
+  <component name="ProjectId" id="2Hdt9UW9h7cRBa7GSbS2ZNLx3jU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_analysis_script" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="testfile" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="sleep-tracker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_analysis_script/testfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cb8d6f7-9f1d-438b-bb84-863fcdb269eb" name="Default Changelist" comment="" />
+      <created>1668626636832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668626636832</updated>
+      <workItem from="1668626637923" duration="13889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="199" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1668646060291">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="199" width="1071" height="730" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1668646060291" />
+    <state x="820" y="286" key="EnvironmentVariablesDialog" timestamp="1668634574372">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="820" y="286" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1668634574372" />
+    <state width="1878" height="363" key="GridCell.Tab.0.bottom" timestamp="1668655252919">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252919" />
+    <state width="1878" height="363" key="GridCell.Tab.0.center" timestamp="1668655252918">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252918" />
+    <state width="1878" height="363" key="GridCell.Tab.0.left" timestamp="1668655252917">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252917" />
+    <state width="1878" height="363" key="GridCell.Tab.0.right" timestamp="1668655252918">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252918" />
+    <state width="1878" height="363" key="GridCell.Tab.1.bottom" timestamp="1668655252922">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252922" />
+    <state width="1878" height="363" key="GridCell.Tab.1.center" timestamp="1668655252920">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252920" />
+    <state width="1878" height="363" key="GridCell.Tab.1.left" timestamp="1668655252920">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252920" />
+    <state width="1878" height="363" key="GridCell.Tab.1.right" timestamp="1668655252921">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1668655252921" />
+    <state x="938" y="71" key="SettingsEditor" timestamp="1668647563278">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="938" y="71" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1668647563278" />
+    <state x="505" y="273" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1668633799278">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="505" y="273" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1668633799278" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sleep_tracker$testfile.coverage" NAME="testfile Coverage Results" MODIFIED="1668655252874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
