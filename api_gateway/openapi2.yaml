@@ -1,0 +1,524 @@
+swagger: "2.0"
+info:
+  title: sleep-tracker
+  description: sleep-tracker API Gateway
+  version: 1.0.0
+schemes:
+ - https
+produces:
+ - application/json
+securityDefinitions:
+  firebase:
+    authorizationUrl: ""
+    flow: "implicit"
+    type: "oauth2"
+    x-google-issuer: "firebase-adminsdk-gwxlx@uw-ideas-ai-psychophysiology.iam.gserviceaccount.com"
+    x-google-jwks_uri: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gwxlx@uw-ideas-ai-psychophysiology.iam.gserviceaccount.com"
+    x-google-audiences: "uw-ideas-ai-psychophysiology"
+security:
+  - firebase: []
+paths:
+  /get_user_events:
+      get:
+        operationId: get_user_events
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_user_events
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_user_stress_values:
+      get:
+        operationId: get_user_stress_values
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_user_stress_values
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_user_hrv_data:
+      get:
+        operationId: get_user_hrv_data
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_user_hrv_data
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_user_settings:
+      get:
+        operationId: get_user_settings
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_user_settings
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_neo:
+      get:
+        operationId: get_neo
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_neo
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_cd:
+      get:
+        operationId: get_cd
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_cd
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_pss:
+      get:
+        operationId: get_pss
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_pss
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /get_current_answer:
+      get:
+        operationId: get_current_answer
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/get_current_answer
+          protocol: h2
+        parameters:
+          - name: id
+            in: query
+            description: User id
+            required: true
+            type: string
+          - name: latest
+            in: query
+            description: set to true for latest record
+            required: false
+            type: string
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: "array"
+  /add_user_event:
+      post:
+        operationId: add_user_event
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_user_event
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/event'
+        responses:
+          '200':
+            description: Created
+  /add_user_stress_values:
+      post:
+        operationId: add_user_stress_values
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_user_stress_values
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/stressvalues'
+        responses:
+          '200':
+            description: Created
+  /add_user_hrv_data:
+      post:
+        operationId: add_user_hrv_data
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_user_hrv_data
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/hrvdata'
+        responses:
+          '200':
+            description: Created
+  /add_user_settings:
+      post:
+        operationId: add_user_settings
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_user_settings
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/usersettings'
+        responses:
+          '200':
+            description: Created
+  /add_neo:
+      post:
+        operationId: add_neo
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_neo
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/neodata'
+        responses:
+          '200':
+            description: Created
+  /add_cd:
+    post:
+      operationId: add_cd
+      x-google-backend:
+        address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_cd
+        protocol: h2
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/cddata'
+      responses:
+        '200':
+          description: Created
+  /add_pss:
+      post:
+        operationId: add_pss
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_pss
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/pssdata'
+        responses:
+          '200':
+            description: Created
+  /add_current_answer:
+      post:
+        operationId: add_current_answer
+        x-google-backend:
+          address: https://etl-cloudrun-s4cbn6o6ga-uc.a.run.app/add_current_answer
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/currentanswer'
+        responses:
+          '200':
+            description: Created
+  /calculate_inference:
+      post:
+        operationId: calculate_inference
+        x-google-backend:
+          address: https://models-cloudrun-s4cbn6o6ga-uc.a.run.app/model_inference
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/modelinference'
+        responses:
+          '200':
+            description: Created
+  /calculate_baevsky_index:
+      post:
+        operationId: baevsky_index
+        x-google-backend:
+          address: https://models-cloudrun-s4cbn6o6ga-uc.a.run.app/baevsky_index
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/baevskyindex'
+        responses:
+          '200':
+            description: Created
+  /calculate_perceived_stress_scale:
+      post:
+        operationId: perceived_stress_scale
+        x-google-backend:
+          address: https://models-cloudrun-s4cbn6o6ga-uc.a.run.app/perceived_stress_scale
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/perceivedstressscale'
+        responses:
+          '200':
+            description: Created
+  /calculate_neo:
+      post:
+        operationId: neo_ffi
+        x-google-backend:
+          address: https://models-cloudrun-s4cbn6o6ga-uc.a.run.app/neo_ffi
+          protocol: h2
+        parameters:
+          - name: body
+            in: body
+            schema:
+              $ref: '#/definitions/neoffi'
+        responses:
+          '200':
+            description: Created
+definitions:
+  event:
+    type: object
+    required:
+     - id
+     - Baseline
+     - HrvData
+     - BaevskyIndex
+     - PredictedValue
+     - NEO-FFI
+     - CD-RISC
+     - PSS
+     - PreStress
+     - PostStress
+    properties:
+      id:
+        type: string
+      Baseline:
+        type: string
+      HrvData:
+        type: string
+      BaevskyIndex:
+        type: string
+      PredictedValue:
+        type: string
+      NEO-FFI:
+        type: string
+      CD-RISC:
+        type: string
+      PSS:
+        type: string
+      PreStress:
+        type: string
+      PostStress:
+        type: string
+  stressvalues:
+    type: object
+    required:
+      - id
+      - PreStress
+      - PostStress
+    properties:
+      id:
+        type: string
+      PreStress:
+        type: string
+      PostStress:
+        type: string
+  hrvdata:
+    type: object
+    required:
+      - id
+      - RawHRV
+      - PostStress
+    properties:
+      id:
+        type: string
+      RawHRV:
+        type: array
+  usersettings:
+    type: object
+    required:
+      - id
+      - DateOfBirth
+      - Height
+      - Weight
+      - Gender
+    properties:
+      id:
+        type: string
+      DateOfBirth:
+        type: string
+      Height:
+        type: string
+      Weight:
+        type: string
+      Gender:
+        type: string
+  neodata:
+    type: object
+    required:
+      - id
+      - NEO-FFI
+    properties:
+      id:
+        type: string
+      NEO-FFI:
+        type: array
+  cddata:
+    type: object
+    required:
+      - id
+      - CD-RISC
+    properties:
+      id:
+        type: string
+      CD-RISC:
+        type: array
+  pssdata:
+    type: object
+    required:
+      - id
+      - PSS
+    properties:
+      id:
+        type: string
+      PSS:
+        type: array
+  currentanswer:
+    type: object
+    required:
+      - id
+      - type
+      - question
+      - response
+    properties:
+      id:
+        type: string
+      type:
+        type: string
+      question:
+        type: string
+      response:
+        type: string
+  modelinference:
+    type: object
+    required:
+      - instance
+      - model_type
+    properties:
+      instance:
+        type: array
+      gender:
+        type: string
+      with_subective_stress_score:
+        type: string
+  baevskyindex:
+    type: object
+    required:
+      - instance
+    properties:
+      instance:
+        type: array
+  perceivedstressscale:
+    type: object
+    required:
+      - instance
+    properties:
+      instance:
+        type: array
+  neoffi:
+    type: object
+    required:
+      - scores
+      - gender
+    properties:
+      scores:
+        type: array
+      gender:
+        type: string
