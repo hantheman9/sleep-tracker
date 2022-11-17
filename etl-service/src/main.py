@@ -6,6 +6,10 @@ import uuid
 import os
 
 
+#TODO
+#parse xml files coming from applewatch application
+
+
 app = Flask(__name__)
 
 cred = credentials.Certificate('cred.json')

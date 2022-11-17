@@ -1,0 +1,4 @@
+firebase-admin
+flask
+google==3.0.0
+google-auth==1.23.0

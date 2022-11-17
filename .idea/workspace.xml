@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cb8d6f7-9f1d-438b-bb84-863fcdb269eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl-service/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl-service/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/token-cloudrun-deployment/deployment" />
       <recent name="$PROJECT_DIR$/etl-service/deployment" />
       <recent name="$PROJECT_DIR$/etl-service/src" />
       <recent name="$PROJECT_DIR$/data_analysis_script" />
@@ -85,7 +86,7 @@
       <updated>1668626636832</updated>
       <workItem from="1668626637923" duration="14117000" />
       <workItem from="1668658516350" duration="20000" />
-      <workItem from="1668658537925" duration="322000" />
+      <workItem from="1668658537925" duration="540000" />
     </task>
     <servers />
   </component>
